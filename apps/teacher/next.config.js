@@ -3,7 +3,7 @@ const nextConfig = {
       rewrites: async () => [
     {
       source: "/student/:path*",
-      destination: "http://localhost:3001/student/:path*", // student로 요청 리다이렉트
+      destination: process.env.STUDENT_URL + "/student/:path*", // student로 요청 리다이렉트
     },
   ],
 };
