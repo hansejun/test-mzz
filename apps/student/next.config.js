@@ -6,7 +6,8 @@ const nextConfig = {
       {
         source: "/",
         destination: process.env.TEACHER_URL + "/sign-in?loginType=student", // teacher-app URL
-        permanent: false, // 이건 true로 설정해야 함 
+        permanent: false, // 이건 true로 설정해야 함
+        basePath:false
       },
     ];
   },
