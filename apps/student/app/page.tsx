@@ -14,6 +14,7 @@ const ThemeImage = (props: Props) => {
 
   return (
     <>
+      나 학생이얌
       <Image {...rest} src={srcLight} className="imgLight" />
       <Image {...rest} src={srcDark} className="imgDark" />
     </>

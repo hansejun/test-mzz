@@ -4,7 +4,16 @@ export default function ClassroomsPage() {
   return (
     <div>
           <h1>학생 클래스룸 페이지</h1>
-          <Link href="/">로그인 페이지로 이동하기</Link>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '16px',
+        color: 'blue',
+
+      }}>
+            <Link href="/">로그인 페이지로 이동하기</Link>
+      <Link href="/organizations/1/settings">설정 페이지로 이동하기</Link>
+  </div>
     </div>
   );
 }
