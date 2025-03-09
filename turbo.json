@@ -6,7 +6,7 @@
       "dependsOn": ["^build"],
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
       "outputs": [".next/**", "!.next/cache/**"],
-      "env": ["TEACHER_URL", "STUDENT_URL"]
+      "env": ["TEACHER_URL", "STUDENT_URL", "DOMAIN"]
     },
     "lint": {
       "dependsOn": ["^lint"]

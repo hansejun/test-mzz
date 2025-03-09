@@ -1,11 +1,13 @@
 'use client'
 
 import { useRouter } from "next/navigation";
+import { setUserRole } from "../../../libs/user-role";
 
 export default function StudentForm() {
     const router = useRouter();
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        await setUserRole('STUDENT');
         router.push('/student/organizations/1/classrooms');
     }
   return <div>
