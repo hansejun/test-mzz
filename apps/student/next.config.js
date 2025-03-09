@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/student",
-    async redirects() {
+  basePath: "/student",
+  
+  async redirects() {
     return [
       {
         source: "/",
